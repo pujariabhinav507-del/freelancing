@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhinav pujari — Frontend Developer for Hire</title>
+  <meta name="description" content="Freelance frontend developer. I build fast, good-looking websites for small businesses and startups." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#top" class="logo">Abhinav<span>.freelancing</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="btn btn-small">Hire me</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status"><i></i> Open for new projects</p>
+        <h1>I turn your idea into a website people actually enjoy using.</h1>
+        <p class="lead">Hi, I'm <strong>Abhinav pujari</strong>, a freelance frontend developer. I build quick, clean, mobile-friendly websites for small businesses, creators and startups.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn">Tell me about your project</a>
+          <a href="#work" class="btn btn-ghost">See my work</a>
+        </div>
+      </div>
+
+      <div class="browser" aria-hidden="true">
+        <div class="browser-bar"><span></span><span></span><span></span><em>yourclient.com</em></div>
+        <div class="browser-body">
+          <div class="mock-title"></div>
+          <div class="mock-line w80"></div>
+          <div class="mock-line w60"></div>
+          <button class="mock-btn" id="mockBtn" tabindex="-1">Click me</button>
+          <p class="mock-note" id="mockNote">Built with HTML, CSS &amp; JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <h2>What I can build for you</h2>
+      <div class="grid3">
+        <article class="card c1">
+          <h3>Business websites</h3>
+          <p>A clear, professional home for your brand: homepage, about, services and contact.</p>
+        </article>
+        <article class="card c2">
+          <h3>Landing pages</h3>
+          <p>One focused page built to turn visitors into calls, orders or sign-ups.</p>
+        </article>
+        <article class="card c3">
+          <h3>React web apps</h3>
+          <p>Dashboards, booking tools and interactive features that feel smooth on every device.</p>
+        </article>
+        <article class="card c4">
+          <h3>Redesign &amp; fixes</h3>
+          <p>Slow, outdated or broken site? I'll make it fast, responsive and easy to update.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h2>Recent work</h2>
+      <p class="sub">Replace these with your own projects: add a screenshot, a title and a link.</p>
+      <div class="grid3">
+        <a href="#" class="project">
+          <div class="thumb t1">Project image</div>
+          <h3>Cafe ordering site</h3>
+          <p>HTML · CSS · JavaScript</p>
+        </a>
+        <a href="#" class="project">
+          <div class="thumb t2">Project image</div>
+          <h3>Fitness coach landing page</h3>
+          <p>React · Tailwind</p>
+        </a>
+        <a href="#" class="project">
+          <div class="thumb t3">Project image</div>
+          <h3>Shop admin dashboard</h3>
+          <p>React · Chart.js</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <h2>How we'll work together</h2>
+      <ol class="steps">
+        <li><b>Chat</b> You message me on WhatsApp and tell me what you need.</li>
+        <li><b>Quote</b> I send a fixed price and timeline within a day.</li>
+        <li><b>Build</b> I share progress along the way so there are no surprises.</li>
+        <li><b>Launch</b> We go live, and I stay around for small fixes.</li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div>
+        <h2>Let's talk on WhatsApp</h2>
+        <p class="sub">Fill this in and it opens WhatsApp with your message ready to send. I usually reply within a few hours.</p>
+      </div>
+      <form id="waForm" class="form">
+        <label>Your name
+          <input type="text" id="name" required placeholder="e.g. Priya" />
+        </label>
+        <label>What do you need?
+          <select id="type">
+            <option>A business website</option>
+            <option>A landing page</option>
+            <option>A React web app</option>
+            <option>A redesign or fix</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Tell me a bit more
+          <textarea id="msg" rows="4" placeholder="What is it for? Do you have a deadline or budget?"></textarea>
+        </label>
+        <button type="submit" class="btn btn-wa">Send on WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Abhinav pujari. Made by hand with HTML, CSS and JS.</p>
+  </footer>
+
+  <a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">Chat</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
